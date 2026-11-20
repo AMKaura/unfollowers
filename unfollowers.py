@@ -26,12 +26,13 @@ for person in followers_data:
 
 #print(myFollowers)
 unfollowers = []
+
 #O(n)
 for person in following:
-    #O(1)
     if person not in followers:
-        unfollowers.append(person)
-
+        link = "https://www.instagram.com/" + person
+        unfollowers.append([person,link])
+        
 print(unfollowers)
 
 
