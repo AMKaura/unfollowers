@@ -24,7 +24,6 @@ Simply export your Instagram data, run the application locally, and see the resu
 
 - Python installed on your computer
 - Instagram followers and following data exported in JSON format
-- A modern web browser
 
 ### Installation
 
@@ -49,7 +48,7 @@ Place `followers_1.json` and `following.json` in the repository's root directory
 Open a terminal in the project directory and run:
 
 ```bash
-py -m http.server 8000 --bind 127.0.0.1
+py -m http.server 8000 or python3 -m http.server 8000
 ```
 
 **5. Launch FollowSifter.**
@@ -77,8 +76,6 @@ The comparison algorithm runs in linear time, **O(n + m)**, where *n* and *m* re
 ## 📌 Important Notes
 
 - Results may include deactivated or renamed accounts due to outdated information in Instagram's exports.
-- FollowSifter identifies accounts that don't follow you back, not necessarily accounts that previously unfollowed you.
-- Never commit your personal Instagram export files to GitHub.
 - The current local version serves JSON files through your development server. Run it only on a trusted computer.
 
 ---
